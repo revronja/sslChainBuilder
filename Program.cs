@@ -18,6 +18,10 @@ namespace Certs
 		static StreamReader _textStreamReader;
         public static void Main(string[] args)
         {
+            // check that name on cert = name of host user is connecting to
+            // var x5092 = new System.Security.Cryptography.X509Certificates.X509Certificate2(certificateBytes);
+            // string hostName = x5092.GetNameInfo(System.Security.Cryptography.X509Certificates.X509NameType.DnsName, false);
+            // bool hostNameMatch = string.Compare(hostName, this.Server, true) == 0;
 
             // need to build x509chain obj , call build with cert, examine chainstatus property to see why failed.
 			// open store
